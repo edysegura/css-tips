@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 5em;
+}
+
+.effect {
+    transition: transform .2s ease;
+}
+
+.effect:hover {
+    transform: rotate(90deg);
+}
