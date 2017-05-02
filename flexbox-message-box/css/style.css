@@ -15,3 +15,15 @@
     background: none;
     border: none;
 }
+
+.info {
+    background-color: #88b5d7;
+}
+
+.warn {
+    background-color: #bec144;
+}
+
+.error {
+    background-color: #8d3a2f;
+}
