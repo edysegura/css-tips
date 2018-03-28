@@ -9,4 +9,5 @@ Simple examples to demonstrate the beauty of CSS
 
 ## References
 
+- [Quick Flexbox Hot Tip](https://www.youtube.com/watch?v=_8RFURTyzA0)
 - [A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
