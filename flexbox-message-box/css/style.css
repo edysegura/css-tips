@@ -1,29 +1,35 @@
 .message-box {
-    width: 300px;
-    height: 40px;
-    border: 1px solid #000;
-    margin: 4px;
-    padding: 4px;
-    display: flex;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #000;
+  margin: 4px;
+  padding: 4px;
+  display: flex;
 }
 
 .message-box p {
-    flex: 1;
+  flex: 1;
+  line-height: 10px;
+  padding-left: 5px;
 }
 
 .message-box button {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .info {
-    background-color: #88b5d7;
+  background-color: #bde5f8;
+}
+
+.success {
+  background-color: #dff2bf;
 }
 
 .warn {
-    background-color: #bec144;
+  background-color: #feefb3;
 }
 
 .error {
-    background-color: #8d3a2f;
+  background-color: #ffbaba;
 }
