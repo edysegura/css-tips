@@ -1,0 +1,23 @@
+label {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+
+label input[type=checkbox] {
+  display: none;
+}
+
+label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background: url(images/white-blue.png) no-repeat 0 0;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background-position: -19px 0;
+}
