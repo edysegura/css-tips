@@ -4,8 +4,8 @@ Simple examples to demonstrate the beauty of CSS
 
 ## Examples
 
-- [Flexbox for message box](flexbox-message-box)
-- [Transform rotate](transform-rotate)
+- [Flexbox for message box](http://edysegura.github.io/css-basics/flexbox-message-box/)
+- [Transform rotate](http://edysegura.github.io/css-basics/transform-rotate/)
 
 ## References
 
