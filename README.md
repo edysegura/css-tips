@@ -1,4 +1,4 @@
-# CSS Basics
+# CSS Tips
 
 Simple examples to demonstrate the beauty of CSS
 
