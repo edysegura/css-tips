@@ -1,11 +1,11 @@
 .rotate {
-    border: 1px solid #ccc;
-    padding: .5em;
-    width: 5em;
-    height: 5em;
-    transition: transform .3s;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  width: 5em;
+  height: 5em;
+  transition: transform 0.3s;
 }
 
 .rotate:hover {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
