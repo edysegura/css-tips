@@ -6,6 +6,7 @@ Simple examples to demonstrate the beauty of CSS
 
 - [Flexbox for message box](http://edysegura.github.io/css-tips/flexbox-message-box/)
 - [Transform rotate](http://edysegura.github.io/css-tips/transform-rotate/)
+- [Custom checkbox](http://edysegura.github.io/css-tips/custom-checkbox-radio/)
 
 ## References
 
