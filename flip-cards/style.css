@@ -1,0 +1,30 @@
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 700px;
+}
+
+.card > .front,
+.card > .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 1px solid black;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.card > .back {
+  transform: rotateY(180deg);
+}
+
+.card:hover > .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover > .back {
+  transform: rotateY(0);
+}
