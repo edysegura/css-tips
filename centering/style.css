@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 200%;
+}
+
+main {
+  position: relative;
+  height: inherit;
+}
+
+main div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
