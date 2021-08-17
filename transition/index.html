@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Animation</title>
-    <style>
-        * {
-            font-size: 1.5rem;
-        }
-        .hello {
-            border: 2px solid grey;
-            padding: 5px;
-            transition: all 3s;
-        }
-        .hello-active {
-            border-color: red;
-            background-color: black;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Animation</title>
+  <style>
+    * {
+      font-size: 1.5rem;
+    }
+
+    .hello {
+      border: 2px solid grey;
+      padding: 5px;
+      transition: all 3s;
+    }
+
+    .hello-active {
+      border-color: red;
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <div class="hello">Hi there!</div>
-    <p>Ref.: <a href="https://www.instagram.com/p/CSfl8jdAFiz/">DevPleno</a></p>
-    <script>
-        const node = document.querySelector('.hello')
-        node.addEventListener('click', (event) => {
-            event.target.classList.add('hello-active')
-        })
-        node.addEventListener('transitionend', (event) => {
-            event.target.classList.remove('hello-active')
-        })
-    </script>
+  <div class="hello">Hi there!</div>
+  <p>Ref.: <a href="https://www.instagram.com/p/CSfl8jdAFiz/">DevPleno</a></p>
+  <script>
+    const node = document.querySelector('.hello')
+    node.addEventListener('click', (event) => {
+      event.target.classList.add('hello-active')
+    })
+    node.addEventListener('transitionend', (event) => {
+      event.target.classList.remove('hello-active')
+    })
+  </script>
 </body>
 </html>
