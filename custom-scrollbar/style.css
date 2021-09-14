@@ -1,0 +1,9 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #777 #555;
+}
+
+body {
+  background-color: #333;
+  color: #ccc;
+}
