@@ -9,3 +9,31 @@
 .container:hover {
   clip-path: circle(50%);
 }
+
+.container2 {
+  width: 500px;
+  height: 500px;
+  background-color: rebeccapurple;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    35% 100%,
+    50% 75%,
+    0% 75%
+  );
+  transition: all 2s ease;
+}
+
+.container2:hover {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    89% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
