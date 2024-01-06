@@ -25,3 +25,11 @@ input::before {
   transition: 0.25s linear transform;
   transform: translateX(0rem);
 }
+
+input:checked {
+  background: green;
+}
+
+input:checked::before {
+  transform: translateX(1rem);
+}
