@@ -1,0 +1,24 @@
+.outer-style {
+  width: 10rem;
+  height: 10rem;
+  background-color: darkgray;
+  border: 2px dotted gray;
+}
+
+.inner-style {
+  width: 5rem;
+  height: 5rem;
+  background-color: lightskyblue;
+  border: 2px solid lightblue;
+}
+
+.outer-box {
+  position: relative;
+}
+
+.inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
