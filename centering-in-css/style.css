@@ -49,5 +49,6 @@ main {
 
 .method-04-outer-box {
   display: grid;
-  place-items: center;
+  /* place-items: center; */
+  place-content: center;
 }
