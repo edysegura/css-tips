@@ -40,3 +40,14 @@ main {
   inset: 0;
   margin: auto;
 }
+
+.method-03-outer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-04-outer-box {
+  display: grid;
+  place-items: center;
+}
