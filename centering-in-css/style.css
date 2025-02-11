@@ -1,5 +1,10 @@
 /* Centering in CSS: https://www.youtube.com/shorts/YBMBhOxbKI0 */
 
+main {
+  display: flex;
+  gap: 1rem;
+}
+
 .outer-style {
   width: 10rem;
   height: 10rem;
