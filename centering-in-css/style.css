@@ -19,14 +19,24 @@ main {
   border: 2px solid lightblue;
 }
 
-.outer-box {
+.method-01-outer-box {
   position: relative;
 }
 
-.inner-box {
+.method-01-inner-box {
   position: absolute;
   top: 50%;
   left: 50%;
   /* transform: translate(-50%, -50%); */
   translate: -50% -50%;
+}
+
+.method-02-outer-box {
+  position: relative;
+}
+
+.method-02-inner-box {
+  position: absolute;
+  inset: 0;
+  margin: auto;
 }
