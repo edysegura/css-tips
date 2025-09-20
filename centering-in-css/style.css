@@ -3,6 +3,7 @@
 main {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
 .outer-style {
@@ -51,4 +52,9 @@ main {
   display: grid;
   /* place-items: center; */
   place-content: center;
+}
+
+.method-05-outer-box {
+  align-content: center;
+  justify-items: center;
 }
