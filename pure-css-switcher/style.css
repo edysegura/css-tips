@@ -8,7 +8,7 @@ input {
   vertical-align: middle;
   border-radius: 2rem;
   box-shadow: 0px 1px 3px #0003 inset;
-  transition: 0.25s linear background;
+  transition: 0.25s linear background-color;
 }
 
 input::before {
