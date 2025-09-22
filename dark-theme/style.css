@@ -6,7 +6,7 @@
   --light-text-color: #212529;
   --dark-text-color: #ffffff;
 
-  :has([id="theme-toggle"]:checked) {
+  &:has([id="theme-toggle"]:checked) {
     color-scheme: light;
   }
 }
