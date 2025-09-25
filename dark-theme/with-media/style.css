@@ -1,5 +1,9 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: dark light;
+
+  &:has([id="theme-toggle"]:checked) {
+    color-scheme: light;
+  }
 
   @media (prefers-color-scheme: light) {
     :root {
@@ -13,10 +17,6 @@
       --background-color: #121212;
       --text-color: #ffffff;
     }
-  }
-
-  &:has([id="theme-toggle"]:checked) {
-    color-scheme: light;
   }
 }
 
