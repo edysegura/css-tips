@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light dark;
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background-color: #f7f9fc;
+      --text-color: #212529;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #121212;
+      --text-color: #ffffff;
+    }
+  }
+
+  &:has([id="theme-toggle"]:checked) {
+    color-scheme: light;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+label {
+  cursor: pointer;
+}
