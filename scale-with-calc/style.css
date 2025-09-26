@@ -1,0 +1,8 @@
+:root {
+  --base-size: 1rem;
+  --scale-factor: 1;
+}
+
+h1 {
+  font-size: calc(var(--base-size) * var(--scale-factor));
+}
