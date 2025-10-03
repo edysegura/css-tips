@@ -28,9 +28,24 @@ main {
     height: 64px;
     width: 64px;
     flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 
     svg {
       height: 32px;
+    }
+
+    &::before {
+      content: attr(data-social);
+      position: absolute;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      border-radius: 100px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      transform: translateY(-65px);
     }
   }
 }
