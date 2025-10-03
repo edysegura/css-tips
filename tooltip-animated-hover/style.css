@@ -39,13 +39,18 @@ main {
     &::before {
       content: attr(data-social);
       position: absolute;
-      background-color: black;
+      background-color: var(--accent-color);
       color: white;
       text-decoration: none;
       padding: 0.5em 1em;
       border-radius: 100px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
       transform: translateY(-65px);
+    }
+
+    &:hover {
+      background-color: var(--accent-color);
+      fill: #fff;
     }
   }
 }
