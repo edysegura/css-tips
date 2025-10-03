@@ -45,7 +45,31 @@ main {
       padding: 0.5em 1em;
       border-radius: 100px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-      transform: translateY(-65px);
+      transform: translateY(-30px) rotate(25deg);
+      opacity: 0;
+      transition: 200ms ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      transform: translateY(-65px) rotate(0);
+    }
+
+    &:hover::after {
+      transform: translateY(-10px) rotate(0);
+      opacity: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 10px solid var(--accent-color);
+      transform: translateY(0) rotate(25deg);
+      opacity: 0;
     }
 
     &:hover {
