@@ -3,22 +3,34 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-family: Poppins, "Segoe UI", sans-serif;
+  background-color: #ebebf6;
 }
 
-body {
-  min-height: 100vh;
-  background-color: #ebebf6;
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .socials-container {
   display: flex;
   gap: 20px;
-}
 
-.socials-container a svg {
-  height: 32px;
+  a {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    flex-shrink: 0;
+
+    svg {
+      height: 32px;
+    }
+  }
 }
