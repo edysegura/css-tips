@@ -36,6 +36,11 @@ main {
       height: 32px;
     }
 
+    &:hover {
+      background-color: var(--accent-color);
+      fill: #fff;
+    }
+
     &::before {
       content: attr(data-social);
       position: absolute;
@@ -55,11 +60,6 @@ main {
       transform: translateY(-65px) rotate(0);
     }
 
-    &:hover::after {
-      transform: translateY(-42px) rotate(0);
-      opacity: 1;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -73,9 +73,9 @@ main {
       transition: 200ms ease;
     }
 
-    &:hover {
-      background-color: var(--accent-color);
-      fill: #fff;
+    &:hover::after {
+      transform: translateY(-42px) rotate(0);
+      opacity: 1;
     }
   }
 }
