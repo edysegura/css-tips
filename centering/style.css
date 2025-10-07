@@ -1,7 +1,12 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 200%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
 }
 
 main {
@@ -16,5 +21,6 @@ main div {
   transform: translate(-50%, -50%);
   background-color: black;
   color: white;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 5rem;
 }
