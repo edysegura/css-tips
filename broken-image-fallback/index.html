@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Broken Image Fallback</title>
     <style>
-      img {
+      img,
+      object[type="image/jpeg"] {
         outline: 0px solid red;
-        height: 200px;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        width: 300px;
       }
     </style>
   </head>
   <body>
     <h1>Broken Image Fallback</h1>
-    <img
-      src="https://www.w3schools.com/html/pic_truli.jpg"
-      alt="Image from w3schools"
-      onerror="this.onerror=null;this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='"
-    />
+    <section>
+      <h2>Base64</h2>
+      <p>Setting as base64 image using <code>onError</code> event</p>
+      <img
+        src="https://www.w3schools.com/html/pic_truli.jpg"
+        alt="Image from w3schools"
+        onerror="this.onerror=null;this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='"
+      />
+    </section>
+    <section>
+      <h2>Object tag</h2>
+      <p>Using object tag with the image inside as a fallback</p>
+      <object
+        data="https://www.w3schools.com/html/pic_trulli.jpg"
+        type="image/jpeg"
+      >
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+          alt="Image from w3schools"
+        />
+      </object>
+    </section>
   </body>
 </html>
