@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Anchor Popover Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="menu-bar" aria-label="Main navigation">
+        <a class="brand" href="#">Anchor Menu</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <button
+              class="menu-trigger"
+              popovertarget="products-menu"
+              id="products-trigger"
+            >
+              Products
+            </button>
+          </li>
+          <li>
+            <button
+              class="menu-trigger"
+              popovertarget="resources-menu"
+              id="resources-trigger"
+            >
+              Resources
+            </button>
+          </li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="submenu" id="products-menu" popover>
+        <a href="#">Analytics</a>
+        <a href="#">Automation</a>
+        <a href="#">Integrations</a>
+        <a href="#">Security</a>
+      </div>
+
+      <div class="submenu" id="resources-menu" popover>
+        <a href="#">Docs</a>
+        <a href="#">CSS Tips</a>
+        <a href="#">Examples</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <p>CSS Anchor Positioning + Popover</p>
+        <h1>A menu bar with submenus, no JavaScript.</h1>
+        <p>
+          Each submenu is a native popover opened by a
+          <code>popovertarget</code> button and positioned with CSS anchor
+          positioning.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
