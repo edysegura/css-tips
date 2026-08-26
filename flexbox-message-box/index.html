@@ -3,32 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flexbox - Message box</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Avoid float with flexbox</h1>
+  <main class="container">
+    <h1>Avoid float with flexbox</h1>
 
-  <div class="message-box info">
-    <p>Information message</p>
-    <button>x</button>
-  </div>
+    <section class="message-stack" aria-label="Message examples">
+      <article class="message-box info" role="alert">
+        <p>Information message</p>
+        <button class="close-button" type="button" aria-label="Dismiss information message">&times;</button>
+      </article>
 
-  <div class="message-box success">
-    <p>Information message</p>
-    <button>x</button>
-  </div>
+      <article class="message-box success" role="alert">
+        <p>Success message</p>
+        <button class="close-button" type="button" aria-label="Dismiss success message">&times;</button>
+      </article>
 
-  <div class="message-box warn">
-    <p>Warning message</p>
-    <button>x</button>
-  </div>
+      <article class="message-box warn" role="alert">
+        <p>Warning message</p>
+        <button class="close-button" type="button" aria-label="Dismiss warning message">&times;</button>
+      </article>
 
-  <div class="message-box error">
-    <p>Error message</p>
-    <button>x</button>
-  </div>
+      <article class="message-box error" role="alert">
+        <p>Error message</p>
+        <button class="close-button" type="button" aria-label="Dismiss error message">&times;</button>
+      </article>
+    </section>
+  </main>
 
 </body>
 </html>

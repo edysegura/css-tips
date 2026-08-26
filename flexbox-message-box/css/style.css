@@ -1,35 +1,52 @@
+.message-stack {
+  max-width: 30rem;
+}
+
 .message-box {
-  width: 300px;
-  height: 40px;
-  border: 1px solid #000;
-  margin: 4px;
-  padding: 4px;
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--pico-border-radius);
+  color: black;
 }
 
 .message-box p {
   flex: 1;
-  line-height: 10px;
-  padding-left: 5px;
+  margin: 0;
+  color: black;
 }
 
-.message-box button {
-  background: none;
-  border: none;
+.close-button {
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  line-height: 1;
 }
 
 .info {
   background-color: #bde5f8;
+  border-color: #8ac7e4;
 }
 
 .success {
   background-color: #dff2bf;
+  border-color: #b7d981;
 }
 
 .warn {
   background-color: #feefb3;
+  border-color: #f3d36c;
 }
 
 .error {
   background-color: #ffbaba;
+  border-color: #e98b8b;
 }
